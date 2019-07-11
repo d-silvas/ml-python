@@ -2,7 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-# See v19categorical_data.py
+###############################
+# v19categorical_data.py
 dataset = pd.read_csv('Data.csv')
 
 x = dataset.iloc[:, :-1].values
@@ -26,4 +27,11 @@ x = onehotencoder.fit_transform(x).toarray()
 
 labelencoder_y = LabelEncoder()
 y = labelencoder_y.fit_transform(y)
+###############################
 
+# Split the dataset into the Trainig set and the #test set
+from sklearn.model_selection import train_test_split
+x_train, x_test, y_train, y_test = train_test_split(
+  x, y, test_size=0.2, # we have 20% of observations in test set
+  random_state=0
+)

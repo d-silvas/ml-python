@@ -1,6 +1,11 @@
 {
+  "editor.tabSize": 4,
   "python.pythonPath": "venv/bin/python",
   "python.linting.pylintEnabled": true,
   "python.linting.enabled": true,
-  "python.linting.pylintPath": "venv/bin/pylint"
+  "python.linting.pylintPath": "venv/bin/pylint",
+  "python.linting.pylintArgs": [
+    "--enable=all",
+    "--disable=invalid-name,wrong-import-position,missing-docstring"
+  ]
 }
