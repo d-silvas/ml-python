@@ -1,6 +1,5 @@
 {
   "editor.tabSize": 4,
-  "python.pythonPath": "venv/bin/python",
   "python.linting.pylintEnabled": true,
   "python.linting.enabled": true,
   "python.linting.pylintPath": "venv/bin/pylint",

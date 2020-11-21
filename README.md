@@ -4,7 +4,8 @@
 
 ## Requirements
 - Python 3.7
-- (Recommended) VSCode
+- VSCode
+- Recommended extensions for VSCode are in `.vscode/extensions.list`
 
 ## Installation
 ```
@@ -15,11 +16,11 @@ pip install -r requirements.txt
 ```
 
 ## Notes
-- Before running, remember to
+- Before running, remember to (Linux)
 ```
 source ./venv/bin/activate
 ```
-- Execute the file and leave the Python interpreter open after the execution (to check variables etc):
+or (Windows)
 ```
-python -i lesson.py
+.\venv\Scripts\activate.bat
 ```
